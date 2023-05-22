@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { postUser } from '../service/api.js'
 import { ToothIcon } from '../assets/ToothIcon.jsx'
 import { Message } from './Message.jsx'
-import { IconButton, List, ListItem, ListItemAvatar, ListItemText, Box, InputBase } from '@mui/material'
+import { IconButton, List, ListItem, ListItemAvatar, ListItemText, Box, InputBase, CircularProgress } from '@mui/material'
 import { AccountCircle, MoreHoriz, NearMeOutlined } from '@mui/icons-material'
 
 export function Screen() {
@@ -63,7 +63,7 @@ export function Screen() {
           style={{ width: '100%', color: 'white', paddingInlineStart: '10px' }}
         />
         <IconButton type='submit' aria-label='send'>
-          {isDisabled ? <MoreHoriz htmlColor='white' /> : <NearMeOutlined htmlColor='white' />}
+          {isDisabled ? <CircularProgress htmlColor='white' /> : <NearMeOutlined htmlColor='white' />}
         </IconButton>
       </Box>
     </div>

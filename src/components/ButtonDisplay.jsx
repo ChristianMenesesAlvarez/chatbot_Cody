@@ -88,7 +88,7 @@ export function ButtonDisplay() {
               <Close />
             </ButtonBase>
           </div>
-          <div className='message-display'>
+          <div className='message-display' style={{ height: '100%' }}>
             <p>Welcome to the home of WisdomTooth AI, your dedicated assistant for dentistry and oral surgery.</p>
             <p>Created with a single aim, our AI chatbot is designed to bridge the gap between complex dental terminology for students, doctors, and patients who seek to understand the intricacies of oral health. We envision a world where knowledge about dental procedures, oral hygiene, and oral surgery is easily accessible to all, and this chatbot is our step towards that direction.</p>
             <p>Our AI chatbot leverages the most advanced artificial intelligence and machine learning techniques, trained extensively in the field of dentistry and oral surgery. It is equipped to explain dental procedures, offer differential diagnosis, and even provide educational material to students studying dentistry. It serves as a handy tool for doctors looking to brush up on their knowledge or stay updated with the latest in oral health and surgery.</p>
@@ -113,7 +113,7 @@ export function ButtonDisplay() {
               <Close />
             </ButtonBase>
           </div>
-          <div className='message-display'>
+          <div className='message-display' style={{ height: '100%' }}>
             <p></p>
           </div>
         </Box>
