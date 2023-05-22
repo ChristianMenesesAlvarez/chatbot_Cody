@@ -3,7 +3,7 @@ import { postUser } from '../service/api.js'
 import { ToothIcon } from '../assets/ToothIcon.jsx'
 import { Message } from './Message.jsx'
 import { IconButton, List, ListItem, ListItemAvatar, ListItemText, Box, InputBase, CircularProgress } from '@mui/material'
-import { AccountCircle, MoreHoriz, NearMeOutlined } from '@mui/icons-material'
+import { AccountCircle, NearMeOutlined } from '@mui/icons-material'
 
 export function Screen() {
   const [isDisabled, setDisabled] = useState(false)
@@ -63,7 +63,7 @@ export function Screen() {
           style={{ width: '100%', color: 'white', paddingInlineStart: '10px' }}
         />
         <IconButton type='submit' aria-label='send'>
-          {isDisabled ? <CircularProgress htmlColor='white' /> : <NearMeOutlined htmlColor='white' />}
+          {isDisabled ? <CircularProgress sx={{ color: 'white' }} size={'1.5em'} /> : <NearMeOutlined htmlColor='white' />}
         </IconButton>
       </Box>
     </div>
